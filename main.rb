@@ -10,6 +10,7 @@ def greeting
 
   case user
    when 'QUIT'
+    puts 'GOOD BYE'
     exit
    else 
       eightball_answers
