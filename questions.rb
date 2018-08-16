@@ -26,3 +26,30 @@ puts "Powerful you have become, the dark side I sense in you."
 puts "Outlook not so good."
 puts "Fear is the path to the Dark Side."
 puts "Many of the truths that we cling to depend on what we do."
+def greeting
+  puts "Ask question to shake the Magic Eight ball"
+  
+  user = gets.strip
+
+  case user
+   when 'hello'
+    eightball_answers
+  else
+     null
+  end
+  
+    
+end
+
+def eightball_answers
+  answers = ["Without a doubt",
+  "Most likely", "Reply hazy, try again",
+  "Concentrate and ask again",
+  "Don't count on it"]
+  puts answers.sample
+  greeting
+  
+end
+
+greeting
+
